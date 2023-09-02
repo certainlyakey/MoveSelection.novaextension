@@ -1,0 +1,27 @@
+{
+  "identifier": "aleksandrbeliaev.MoveSelection",
+  "name": "Move Selection",
+  "organization": "Aleksandr Beliaev",
+  "description": "Move current selection left or right character by character.",
+  "version": "0.0.1",
+  "categories": ["commands"],
+  "bugs": "https://github.com/certainlyakey/MoveSelection.novaextension/issues",
+  "main": "main.js",
+
+  "commands": {
+    "editor": [
+      {
+        "title": "Move Selection Backwards",
+        "command": "moveSelection.moveSelectionLeft",
+        "shortcut": "ctrl-alt-cmd-left",
+        "when": "editorHasFocus && editorHasSelection"
+      },
+      {
+        "title": "Move Selection Forward",
+        "command": "moveSelection.moveSelectionRight",
+        "shortcut": "ctrl-alt-cmd-right",
+        "when": "editorHasFocus && editorHasSelection"
+      }
+    ]
+  }
+}
